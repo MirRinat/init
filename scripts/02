@@ -1,0 +1,4 @@
+#!/bin/bash
+USERNAME = $1
+sudo kill -9 $(pgrep -u $USERNAME)
+sudo userdel $USERNAME
